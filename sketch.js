@@ -30,8 +30,8 @@ function setup() {
 
 	rope1 = new Rope(bobObject1.body, roof.body,-100, 20);
 	rope2 = new Rope(bobObject2.body, roof.body,-50, 20);
-	rope3 = new Rope(bobObject3.body, roof.body,-0, 20);
-	rope4 = new Rope(bobObject4.body, roof.body,50, 20);
+	rope3 = new Rope(bobObject3.body, roof.body,0, 20);
+	rope4 = new Rope(bobObject4.body, roof.body, 50, 20);
   rope5 = new Rope(bobObject5.body, roof.body,100, 20);
   
   World.add(world, bobObject1, bobObject2, bobObject3, bobObject4, bobObject5);

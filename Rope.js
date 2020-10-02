@@ -6,7 +6,7 @@ class Rope {
             bodyA: body1, 
             bodyB: body2,
             pointB:{x:this.offsetX, y:this.offsetY},
-            stiffness : 0.001,
+            stiffness : 1.00,
             length : 400
         }
         this.rope=Constraint.create(options)
@@ -21,8 +21,7 @@ class Rope {
         var Anchor2X = pointB.x + this.offsetX
         var Anchor2Y = pointB.y + this.offsetY
 
-        //line(pointA.x, pointA.y, pointB.x, pointB.y);
-        line(Anchor1X, Anchor1Y, Anchor2X, Anchor2Y);
+         line(Anchor1X, Anchor1Y, Anchor2X, Anchor2Y);
            
     }
     fly(){
